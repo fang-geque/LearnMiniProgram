@@ -12,6 +12,7 @@ Page({
    */
   data: {
     name:'Hukeke',
+
     // age:18,
     // students:[
     //   { id: 110, name: 'age', age: 18 },
@@ -42,7 +43,7 @@ Page({
   onLoad: function (options) {
     console.log('onLoad')
     wx.request({
-      url: 'http://123.207.32.32:8000/recommend',
+      url: 'http://123.207.32.32:8000/api/v2/recommend',
       success(res){
         console.log(res)
       }
