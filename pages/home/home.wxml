@@ -11,3 +11,5 @@
 <view>当前计数：{{counter}}</view>
 <button size="mini" bindtap="handleBtnClick">+</button>
 <button size="mini" bindtap="handleSubtraction">-</button>
+
+<view wx:for="{{list}}">{{item.title}}</view>

@@ -12,6 +12,7 @@ Page({
    */
   data: {
     name:'Hukeke',
+    list:[]
 
     // age:18,
     // students:[
@@ -42,10 +43,15 @@ Page({
    */
   onLoad: function (options) {
     console.log('onLoad')
+    const that = this
     wx.request({
       url: 'http://123.207.32.32:8000/api/v2/recommend',
       success(res){
-        console.log(res)
+        console.log(res);
+        const data = res.data.data.list;
+        that.setData({
+          list:data
+        })
       }
     })
   },
@@ -97,5 +103,14 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  //监听页面的滚动事件
+  onPageScroll(obj){
+    console.log(obj)
+  },
+  //监听页面滚动到顶部
+  onReachBottom(){
+    console.log('页面滚动到顶部')
   }
 })
