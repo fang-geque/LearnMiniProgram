@@ -3,6 +3,8 @@ import {
   getMultiData,
   getGoodsData} from '../../service/home.js'
 
+  const types = ['pop','new','sell']
+
 Page({
 
   /**
@@ -16,7 +18,8 @@ Page({
       pop:{page:0,list:[]},
       new:{page:0,list:[]},
       sell:{page:0,list:[]},
-    }
+    },
+    currentType:"pop"
   },
 
   /**
@@ -78,6 +81,12 @@ Page({
     //取出index
     const index = event.detail.index
     console.log(index)
+
+    //修改currentType
+    const type = types[index]
+    this.setData({
+      currentType:type
+    })
   },
 
 
