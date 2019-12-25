@@ -30,6 +30,12 @@ Component({
       // 2.发出时间
       const data = {index: this.data.currentIndex}
       this.triggerEvent("tabclick", data, {})
+    },
+    setCurrentIndex(index) {
+      console.log(index)
+      this.setData({
+        currentIndex: index
+      })
     }
   }
 })

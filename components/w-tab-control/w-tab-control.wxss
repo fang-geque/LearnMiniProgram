@@ -2,8 +2,6 @@
 .tab-control {
   display: flex;
   margin-bottom: 16rpx;
-  background: #fff;
-  padding-bottom: 10rpx;
 }
 
 .tab-item {

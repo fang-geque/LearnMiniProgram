@@ -1,10 +1,9 @@
 /* components/w-goods-item/w-goods-item.wxss */
 .goods-item {
+  /* width: 200rpx; */
   text-align: center;
   color: #333;
   padding-bottom: 85rpx;
-
- 
 }
 
 .image {
@@ -40,7 +39,7 @@
   height: 30rpx;
   padding: 0 6rpx 0 10rpx;
   position: relative;
-  top: 5rpx;
+  top:4rpx;
 }
 
 .cfav {
@@ -48,7 +47,6 @@
   position: relative;
 }
 
-/* 注意事项: 在wxss中不能引用本地图片,只能引用网络图片 */
 /* .cfav::before {
   content: '';
   position: absolute;
@@ -56,5 +54,5 @@
   top: -1px;
   width: 14px;
   height: 14px;
-  background: url("/assets/common/favor.png") 0 0/14px 14px;
+  background: url("/assets/images/common/favor.png") 0 0/14px 14px;
 } */
